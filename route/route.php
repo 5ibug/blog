@@ -1,0 +1,19 @@
+<?php
+
+// +----------------------------------------------------------------------
+// | ThinkPHP [ WE CAN DO IT JUST THINK ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2006~2018 http://thinkphp.cn All rights reserved.
+// +----------------------------------------------------------------------
+// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+// +----------------------------------------------------------------------
+// | Author: liu21st <liu21st@gmail.com>
+// +----------------------------------------------------------------------
+Route::rule('info/:id', 'index/Info/index', 'GET');
+Route::rule('search', 'index/Index/search', 'POST');
+Route::rule('type/:type', 'index/Index/index', 'GET');
+Route::rule('page/:page', 'index/Index/index', 'GET');
+Route::rule('admin/article/index', 'admin/article/index', 'GET');
+Route::rule('admin/article/page/:page', 'admin/article/index', 'GET');
+return [
+];
